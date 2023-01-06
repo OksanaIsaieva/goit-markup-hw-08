@@ -7,9 +7,7 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0px 15px;
-  margin: 0 auto;
 }
 
 h1,
@@ -44,12 +42,12 @@ a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000;
-  margin-right: 93px;
+  margin: 16px auto 16px 0;
 }
 
 .first-logo-part {
@@ -72,6 +70,11 @@ a {
     height: 60px;
     max-width: 480px;
   }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .menu-button {
@@ -223,34 +226,43 @@ a {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.4)), url(../images/background-img.jpeg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.4)), url(../images/background-img-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  min-height: 600px;
+  max-width: 480px;
+  min-height: 400px;
   margin: 0 auto;
   background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.4)), url(../images/background-img-mob2x.jpg);
+  }
+}
 .hero__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 696px;
+  align-items: center;
+  max-width: 360px;
+  height: 164px;
 }
 
 .hero__title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
-  margin-top: 200px;
 }
 
 .hero__btn {
@@ -267,8 +279,7 @@ a {
   color: #ffffff;
   border-radius: 4px;
   border: none;
-  margin-bottom: 200px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -276,20 +287,17 @@ a {
 }
 
 .benefits {
-  padding: 94px 15px;
+  margin-top: 60px;
 }
 
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .benefits__item {
-  width: calc((100% - 90px) / 4);
-}
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .benefits__icon-container {
@@ -309,6 +317,7 @@ a {
 }
 
 .benefits__sub-title {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -324,6 +333,11 @@ a {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1200px) {
+  .engagement {
+    display: none;
+  }
+}
 .engagement {
   padding-bottom: 94px;
 }
@@ -372,27 +386,30 @@ a {
 }
 
 .team {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
 .team__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .team__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
@@ -422,10 +439,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   /* margin-bottom: 30px; */
-}
-
-.team__list .team__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .links-list {
