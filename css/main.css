@@ -293,6 +293,7 @@ a {
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
+    align-items: start;
     flex-wrap: wrap;
     justify-content: start;
   }
@@ -671,6 +672,10 @@ a {
   .team__list .team__item:not(:last-child) {
     margin-right: 30px;
   }
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .pictures-list {
   background-color: #fff;
@@ -895,6 +900,9 @@ a {
     padding: 0 20px;
     width: 25%;
     margin-bottom: 0;
+  }
+  .footer__main-container {
+    align-items: start;
   }
 }
 .sign-up-form {
