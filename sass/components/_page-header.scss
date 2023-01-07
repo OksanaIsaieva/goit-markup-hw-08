@@ -194,9 +194,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: start;}
 .header__contacts-conteiner > a {
-  // display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   font-size: 12px;
   line-height: 1.17em;
   padding-bottom: 10px;
@@ -211,4 +208,25 @@ justify-content: start;}
     color: $action-color;
   }
   };
+}
+@media screen and (min-width:1200px) {
+  .heder{
+    width: 1200px;
+  }
+  .header__contacts-conteiner > a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;};
+    .header__contacts-conteiner{
+      width: fit-content;
+    };
+    .heder_menu-context-container{
+      width: 100%;
+    };
+    .navigation-container-mob{
+      width: 100%;
+    };
+    .header__contacts-conteiner > a:not(:last-child) {
+      margin-right: 40px;
+    };
 }

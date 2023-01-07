@@ -85,3 +85,30 @@ max-width: 768px;
     url(../images/background-img-tab@2x.jpg);
   }
  }}
+ @media screen and (min-width: 1200px) {
+  .hero{background-image :linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(../images/background-img-desk.jpg);
+max-width: 1600px;
+height: 600px;};
+.hero__container {
+  max-width: 696px;
+};
+.hero__title {
+  font-size: 44px;
+  line-height: 1.36em;
+}
+  @media screen and (min-device-pixel-ratio: 2), 
+  (-webkit-min-device-pixel-ratio: 2) {
+    .hero{background-image :linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/background-img-desk@2x.jpg);
+  }
+ }
+}
