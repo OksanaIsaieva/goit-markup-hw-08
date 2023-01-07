@@ -795,8 +795,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 582px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -834,6 +834,12 @@ a {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 582px;
+  }
+}
 .modal-window-title {
   font-weight: 700;
   font-size: 20px;
@@ -912,8 +918,8 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1em;
+  font-size: 12px;
+  line-height: 1.17em;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
@@ -959,8 +965,8 @@ a {
   color: #2196f3;
   text-decoration: none;
   border-bottom: 1px solid #2196f3;
-  font-size: 14px;
-  line-height: 1em;
+  font-size: 12px;
+  line-height: 1.17em;
   padding-left: 4px;
 }
 

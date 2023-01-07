@@ -82,8 +82,8 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1em;
+  font-size: 12px;
+  line-height: 1.17em;
   letter-spacing: 0.03em;
   color: $main-text-color;
   cursor: pointer;
@@ -128,8 +128,8 @@ svg {
   color: $action-color;
   text-decoration: none;
   border-bottom: 1px solid $action-color;
-  font-size: 14px;
-  line-height: 1em;
+  font-size: 12px;
+  line-height: 1.17em;
   padding-left: 4px;
 }
 .form > button {
