@@ -60,6 +60,8 @@ a {
 
 .footer__logo-container {
   width: 100%;
+  display: inline-block;
+  text-align: center;
 }
 
 .header {
@@ -449,9 +451,6 @@ a {
   padding-right: 32px;
   padding-bottom: 30px;
 }
-.links-list li:not(:last-child) a {
-  margin-right: 10px;
-}
 
 .links-list__links {
   display: flex;
@@ -478,34 +477,33 @@ a {
 
 .pictures-list {
   background-color: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .pictures-list__container {
-  max-width: 1200px;
+  max-width: 480px;
 }
 .pictures-list__container .pictures-list__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.pictures-list__container .pictures-list__items {
+
+.pictures-list__items {
   /* padding: 16px 32px; */
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 60px) / 2);
+  margin-bottom: 30px;
 }
 
 .pictures-list__title {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.18em;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
-}
-
-.pictures-list__items:not(:last-child) {
-  margin-right: 30px;
 }
 
 .pictures-list__items .pictures-list__link {
@@ -524,6 +522,10 @@ a {
   border-color: #2196f3;
 }
 
+.pictures-list__items:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
 .pictures-list__logo {
   width: 106px;
   height: 60px;
@@ -534,6 +536,25 @@ a {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .pictures-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .pictures-list__items {
+    width: calc((100% - 150px) / 6);
+  }
+  .pictures-list__title {
+    font-size: 36px;
+    line-height: 1.18em;
+  }
+  .pictures-list__items:not(:last-child) {
+    margin-right: 30px;
+  }
+  .pictures-list__container {
+    max-width: 1200px;
+  }
+}
 .footer {
   background-color: #2f303a;
   border: solid 0px transparent;
@@ -543,17 +564,20 @@ a {
 
 .footer__main-container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__container {
-  display: flex;
   flex-wrap: wrap;
-  width: 25%;
+  width: 100%;
 }
 
 .footer__address-container {
-  padding-top: 20px;
-  margin-right: 70px;
+  padding-top: 28px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer__contacts {
@@ -574,8 +598,12 @@ a {
 }
 
 .footer__social-links-container {
-  padding: 0 20px;
-  width: 25%;
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer__title {
@@ -586,6 +614,8 @@ a {
   color: rgb(255, 255, 255);
   margin-top: 12px;
   margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .footer__social-links-list {
@@ -621,19 +651,37 @@ a {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    width: 25%;
+  }
+  .footer__address-container {
+    padding-top: 20px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .footer__social-links-container {
+    padding: 0 20px;
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
 .sign-up-form {
   /* position: absolute;
   left: calc(50% + 15px); */
-  width: 50%;
+  width: 100%;
   /* height: 0.15; */
   display: flex;
-  align-items: end;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   align-self: start;
   padding: 0 15px;
 }
 
 .sign-up-form__header {
   display: inherit;
+  text-align: center;
   width: 100%;
   font-weight: 700;
   font-size: 14px;
@@ -645,11 +693,16 @@ a {
   margin-top: 12px;
 }
 
+.sign-up-form__label {
+  width: 100%;
+}
+
 .sign-up-form__label > input {
   box-sizing: border-box;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
+  margin-bottom: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
@@ -706,6 +759,21 @@ a {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-up-form {
+    width: 50%;
+    display: flex;
+    align-items: end;
+    align-self: start;
+    padding: 0 15px;
+  }
+  .sign-up-form__header {
+    text-align: start;
+  }
+  .sign-up-form__label > input {
+    margin-bottom: 0;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
