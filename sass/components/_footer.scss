@@ -88,6 +88,14 @@ justify-content: center;
   fill: #ffffff;
 };
 }
+@media screen and (min-width:768px) {
+  .footer__container {
+    width: 50%;
+  };
+  .footer__social-links-container{
+    width: 50%;
+    margin-bottom: 102px;
+  }}
 @media screen and (min-width:1200px) {
   .footer__container {
     width: 25%;

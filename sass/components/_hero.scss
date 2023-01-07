@@ -66,3 +66,22 @@
     background-color: #188CE8;
   }
 }
+ @media screen and (min-width: 768px) {
+  .hero{background-image :linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(../images/background-img-tab.jpg);
+max-width: 768px;
+}
+  @media screen and (min-device-pixel-ratio: 2), 
+  (-webkit-min-device-pixel-ratio: 2) {
+    .hero{background-image :linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/background-img-tab@2x.jpg);
+  }
+ }}
