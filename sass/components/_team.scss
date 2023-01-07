@@ -28,6 +28,9 @@
   img {
   display: block;
 };
+&:not(:last-child){
+  margin-bottom: 30px;
+}
 }
 .team__members-container {
   padding-top: 30px;

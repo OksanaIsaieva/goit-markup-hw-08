@@ -132,6 +132,13 @@ svg {
   line-height: 1.17em;
   padding-left: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .form__checkbox-text,
+  .form__conditions {
+    font-size: 12px;
+  line-height: 1.17em;
+  };
+}
 .form > button {
   cursor: pointer;
   position: absolute;
