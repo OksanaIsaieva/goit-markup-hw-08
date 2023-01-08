@@ -4,14 +4,23 @@ body{
 .list {
   list-style-type: none;
 }
+.container {
+  max-width:480px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;  
+    width: 768px;
+      margin: 0 auto;
+    };
+}
 @media screen and (min-width: 1200px) {
   .container {
       width: 1200px;
       margin: 0 auto;
     };
-}
-.container {
-  padding: 0px 15px;
 }
 h1,
 h2,

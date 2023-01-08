@@ -104,11 +104,16 @@ justify-content: center;
     padding-top: 20px;
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
+  };
+  .footer__title{
+    text-align: left;
   };
   .footer__social-links-container {
     padding: 0 20px;
     width: 25%;
   margin-bottom: 0;
+  justify-content: space-between;
   };
   .footer__main-container {
     align-items: start;

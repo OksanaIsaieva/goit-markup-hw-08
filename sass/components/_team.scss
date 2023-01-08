@@ -26,6 +26,7 @@
   background-color: #ffffff;
   img {
   display: block;
+  max-width: 100%;
 };
 &:not(:last-child){
   margin-bottom: 30px;
@@ -104,6 +105,9 @@
     };
 }
 @media screen and (min-width:1200px) {
+  .team {
+    padding-top: 94px;
+  padding-bottom: 94px;};
   .team__item {
     width: calc((100% - 90px) / 4);};
     .team__list .team__item:not(:last-child) {
@@ -111,5 +115,6 @@
 };
 .team__title {
   font-size: 36px;
-  line-height: 1.17;}
+  line-height: 1.17;
+margin-bottom: 50px;}
 }
