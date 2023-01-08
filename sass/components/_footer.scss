@@ -19,6 +19,9 @@
   padding-top: 28px;
   margin-bottom: 60px;
   text-align: center;
+  .footer-address__item:not(:last-child){
+    margin-bottom: 12px;
+    };
 }
 .footer__contacts {
   
@@ -107,9 +110,7 @@ justify-content: center;
     margin-bottom: 0;
     text-align: left;
     line-height: 1.14em;
-    .footer-address__item:not(:last-child){
-    margin-bottom: 12px;
-    };
+   
   };
   .footer__title{
     text-align: left;

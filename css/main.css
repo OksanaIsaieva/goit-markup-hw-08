@@ -846,6 +846,9 @@ a {
   margin-bottom: 60px;
   text-align: center;
 }
+.footer__address-container .footer-address__item:not(:last-child) {
+  margin-bottom: 12px;
+}
 
 .footer__contacts {
   text-decoration: none;
@@ -937,9 +940,6 @@ a {
     margin-bottom: 0;
     text-align: left;
     line-height: 1.14em;
-  }
-  .footer__address-container .footer-address__item:not(:last-child) {
-    margin-bottom: 12px;
   }
   .footer__title {
     text-align: left;
